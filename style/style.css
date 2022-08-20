@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+header ul{
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 586px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul a{
+    padding: 24px 18px;
+    border-radius: 0px 35px;
+    background-color: #C4C4C4;
+    color: black;
+}
+header ul a:hover{
+    cursor: pointer;
+    background-color: #79B331;
+    color: #ffffff;
+}
+.active{
+    background-color: #79B331;
+    color: #ffffff;
+}
+.animatedbox{
+    margin-top: 145px;
+    margin-left: 809px;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    font-size: 18px
+}
+.clock{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 22px;
+}
+.ball{
+    width: 32px;
+    height: 32px;
+    margin-left: 330px;
+    margin-top: 94px;
+    border-radius: 50%;
+    background-color: #79B331;
+    position: relative;
+    animation: ballanimation 4s infinite;
+}
+@keyframes ballanimation {
+    0%{top:0;left: 0;}
+    25%{top:0;left: 392px;}
+    50%{top:156px;left: 392px;}
+    75%{top:156px;left: 0;}
+    100%{top:0;left: 0;}
+}
+.tree{
+    width: 1062px;
+    height: 500px;
+    margin-top: 140px;
+    margin-left: 406px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stem{
+    width: 2px;
+    height: 430px;
+    background-color: #C4C4C4;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+}
+
+.conteiner{
+    width: 531px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.conteiner p{
+    width: 420px;
+    height: 48px;
+    margin-top: 12px;
+    font-size: 18px;
+    color: #C4C4C4;
+}
+
+.leaf{
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px 0 35px;
+    background-color: #C4C4C4;
+}
+
+.conteiner:hover .leaf{
+    cursor: pointer;
+    background-color: #79B331;
+}
+.conteiner:hover p{
+    cursor: pointer;
+    color: #79B331;
+}
+
+.second{
+    margin-top: 140px;
+    margin-left: 50%;
+}
+
+.third{
+    margin-top: 280px;
+}
+
+.forth{
+    margin-top: 420px;
+    margin-left: 50%;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+
+
+
